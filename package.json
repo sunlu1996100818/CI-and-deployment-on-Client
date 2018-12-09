@@ -9,7 +9,7 @@
     "start": "npm run dev",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
+    "test": "npx cypress open",
     "build": "node build/build.js"
   },
   "dependencies": {
@@ -42,7 +42,7 @@
     "chromedriver": "^2.27.2",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.0.1",
-    "cross-env": "^5.0.1",
+    "cross-env": "^5.2.0",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
     "cypress": "^3.1.3",

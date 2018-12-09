@@ -2,8 +2,11 @@ dist: trusty
 language: node_js
 node_js:
 - stable
+before_script:
+-npm install
+-npm run custom-build
 script:
-- npm run coverage
+- npx cypress run
 after_success:
 - npm run publish-coverage
 branches:

@@ -11,9 +11,4 @@ before_script:
 - cd dist && httpserver -p 8080 &
 script:
 - npx cypress run
-notifications:
-  email:
-    recipients:
-    - 996844107@qq.com     # change to your own address
-    on_success: never        # default: change
-    on_failure: always       # default: always
+

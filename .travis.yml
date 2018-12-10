@@ -6,7 +6,7 @@ cache:
   npm: true
   directories:
   - node_modules
-  - ~/.npm
+  - ~/.cache
 before_script:
 - npm install -g httpserver
 - npm run custom-build

@@ -8,7 +8,7 @@ cache:
 before_script:
 - npm install -g httpserver
 - npm run custom-build
-- cd dist && http-server -p 8080 
+- cd dist && httpserver -p 8080 &
 script:
 - npx cypress run
 

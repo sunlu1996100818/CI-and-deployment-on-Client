@@ -2,6 +2,8 @@ dist: trusty
 language: node_js
 node_js:
 - stable
+- 0.4
+- 0.6
 install:
 - npm ci
 cache:

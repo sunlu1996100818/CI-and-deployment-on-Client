@@ -11,7 +11,8 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "build": "node build/build.js",
-    "custom-build": "npx webpack --config build/webpack.custom.prod.config.js"
+    "custom-build": "npx webpack --config build/webpack.custom.prod.config.js",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "axios": "^0.18.0",
